@@ -124,7 +124,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
 
 if __name__ == "__main__":
     with socketserver.TCPServer(("", PORT), MyHandler) as httpd:
-        print(f"✨ Server running beautifully at http://localhost:{PORT}")
+        print(f"Server running beautifully at http://localhost:{PORT}")
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
